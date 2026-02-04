@@ -1,0 +1,209 @@
+:root {
+    --bg-main: #07080d;
+    --bg-panel: #0d0f1a;
+
+    --primary: #f97316;
+    --secondary: #fb7185;
+
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+
+    --border-soft: rgba(255,255,255,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background:
+        radial-gradient(circle at top, rgba(249,115,22,0.25), transparent 45%),
+        radial-gradient(circle at bottom, rgba(251,113,133,0.15), transparent 50%),
+        #07080d;
+    color: var(--text-main);
+}
+
+.nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(13,15,26,0.85);
+    backdrop-filter: blur(14px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 42px;
+}
+
+.logo span {
+    font-size: 26px;
+    font-weight: 900;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-btn {
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.login-btn {
+    position: fixed;
+    top: 18px;
+    right: 90px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #020617;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 20px 40px rgba(249,115,22,0.35);
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    background: linear-gradient(180deg, #0d0f1a, #07080d);
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: right 0.4s ease;
+    z-index: 1050;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background: rgba(249,115,22,0.15);
+}
+
+.nav-links.open {
+    right: 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 160px 20px 140px;
+}
+
+.hero h1 {
+    font-size: 68px;
+    font-weight: 900;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+.hero p {
+    margin-top: 18px;
+    color: var(--text-muted);
+}
+
+.section {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: linear-gradient(180deg, #0d0f1a, #07080d);
+    border-radius: 24px;
+    padding: 40px 28px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 40px 90px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.search {
+    max-width: 700px;
+    margin: 120px auto;
+    padding: 40px;
+    background: linear-gradient(180deg, #0d0f1a, #07080d);
+    border-radius: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 18px 26px;
+    border-radius: 999px;
+    border: 1px solid rgba(249,115,22,0.4);
+    background: #07080d;
+    color: var(--text-main);
+    outline: none;
+}
+
+.search button {
+    padding: 18px 42px;
+    border-radius: 999px;
+    border: none;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #020617;
+    cursor: pointer;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-soft);
+}

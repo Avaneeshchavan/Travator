@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travator - Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .weather-status {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0d47a1;
+            margin: 10px 0;
+        }
+
+        .temp {
+            font-size: 32px;
+            color: #1976d2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Travatar Logo">
+            <span>Travatar</span>
+        </div>
+
+        <div class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+            ☰
+        </div>
+
+        <a href="login.html" class="login-btn">Login</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="#">Plan Trip</a>
+            <a href="weather.html">Weather</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>World Weather</h1>
+        <p>Check the current climate before you pack your bags.</p>
+    </div>
+
+    <div class="section">
+        <h2>Current Conditions</h2>
+        <div class="features">
+            <div class="card">
+                <h3>Goa, India</h3>
+                <div class="weather-status">Sunny</div>
+                <div class="temp">31°C</div>
+                <p>Humidity: 65%<br>Wind: 12 km/h</p>
+            </div>
+
+            <div class="card">
+                <h3>Swiss Alps</h3>
+                <div class="weather-status">Snowy</div>
+                <div class="temp">-4°C</div>
+                <p>Humidity: 80%<br>Wind: 20 km/h</p>
+            </div>
+
+            <div class="card">
+                <h3>Giza, Egypt</h3>
+                <div class="weather-status">Dry</div>
+                <div class="temp">26°C</div>
+                <p>Humidity: 20%<br>Wind: 15 km/h</p>
+            </div>
+
+            <div class="card">
+                <h3>London, UK</h3>
+                <div class="weather-status">Cloudy</div>
+                <div class="temp">12°C</div>
+                <p>Humidity: 75%<br>Wind: 10 km/h</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> 2025 Travator </p>
+    </footer>
+
+</body>
+</html>

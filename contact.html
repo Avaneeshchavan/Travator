@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travator - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-container {
+            background-color: white;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .contact-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #0d47a1;
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .info-row {
+            margin-top: 30px;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Travatar Logo">
+            <span>Travatar</span>
+        </div>
+
+        <div class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+            ☰
+        </div>
+
+        <a href="login.html" class="login-btn">Login</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="#">Plan Trip</a>
+            <a href="weather.html">Weather</a>
+            <a href="budget.html">Budget Planner</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Contact Us</h1>
+        <p>Have questions? We're here to help you plan your journey.</p>
+    </div>
+
+    <div class="section">
+        <div class="contact-container">
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Your Name">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="email@example.com">
+
+                <label>Subject</label>
+                <input type="text" placeholder="How can we help?">
+
+                <label>Message</label>
+                <textarea rows="5" placeholder="Write your message here..."></textarea>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="info-row">
+                <p>Email: support@travator.com | Phone: +1 234 567 890</p>
+                <p>Address: 123 Travel Lane, Adventure City</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> 2025 Travator </p>
+    </footer>
+
+</body>
+
+</html>
